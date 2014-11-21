@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="cookBook">
+	<head>
+    <meta charset="utf-8" />
+    <title>Missy's Playground</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/RecipesController.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid" ng-controller="homeController">
+			<h1>{{title}}</h1>
+			<a href="#/recipes">Recipe Index</a>
+			<div ng-view></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<div class="row-fluid" ng-controller="recipesController">
+	<h2>Recipes Controller Index</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="recipe in recipes">
+        <td>{{recipe.title}}</td>
+        <td>{{recipe.description}}</td>
+        <td>Edit</td>
+        <td><span ng-click="deleteRecipe(recipe)">Delete</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <form name="addRecipeForm" ng-submit="addRecipe()">
+    <input ng-model="newRecipe.title" />
+    <input ng-model="newRecipe.description" />
+    <button type="submit">add recipe</button>
+  </form>
+</div>
