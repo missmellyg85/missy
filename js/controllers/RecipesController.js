@@ -3,6 +3,8 @@ cookBook.controller('recipesController', ['$scope', '$firebase', '$window', func
   var sync = $firebase(ref);
   $scope.recipes = sync.$asArray();
 
+  $scope.showAddForm = false;
+
 	var recipes = this;
 
   $scope.addRecipe = function() {
