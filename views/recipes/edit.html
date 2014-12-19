@@ -1,0 +1,8 @@
+<div ng-controller="recipesController">
+	Edit Your Recipe
+	<form role="form" class="form-inline" name="editRecipeForm">
+		<input class="form-control" ng-model="recipe.title" ng-value="recipe.title" />
+		<input class="form-control" ng-model="recipe.description" ng-value="recipe.description" />
+		<button class="btn" ng-click="recipes.$save(recipe);">Save</button>
+	</form>
+</div>

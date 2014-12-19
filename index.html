@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html ng-app="cookBook">
 	<head>
-    <meta charset="utf-8" />
-    <title>Missy's Playground</title>
+        <meta charset="utf-8" />
+        <title>Missy's Playground</title>
 
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet/less" type="text/css" href="less/recipes.less" />
 
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="bower_components/firebase/firebase.js"></script>
-    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
-    <script src="bower_components/less/dist/less.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/routes.js"></script>
-    <script src="js/controllers/HomeController.js"></script>
-    <script src="js/controllers/RecipesController.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/firebase/firebase.js"></script>
+        <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+        <script src="bower_components/less/dist/less.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/routes.js"></script>
+        <script src="js/controllers/HomeController.js"></script>
+        <script src="js/controllers/RecipesController.js"></script>
+        <script src="js/directives/editRecipeDirective.js"></script>
 	</head>
 	<body>
 		<div class="container-fluid" ng-controller="homeController">
